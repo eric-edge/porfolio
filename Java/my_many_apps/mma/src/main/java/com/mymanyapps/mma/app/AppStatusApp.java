@@ -1,0 +1,84 @@
+/*******************************************************************************
+ * MIT License
+ *
+ * Copyright (c) 2019 Eric Thivierge
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ * Contributors:
+ *     Eric Thivierge
+ *******************************************************************************/
+package com.mymanyapps.mma.app;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
+
+import com.mymanyapps.mma.model.paneapp.AbstractPaneApp;
+import com.mymanyapps.mma.view.AppStatusAppView;
+
+public class AppStatusApp
+    extends AbstractPaneApp<AppStatusAppView>
+    implements Observer
+{
+    private AppStatusAppView view;
+
+    private final List<AbstractAppStatus> statusList = new ArrayList<>();
+
+    public void addObservedApp(AbstractAppStatus observedApp)
+    {
+        if (observedApp == null)
+        {
+            return;
+        }
+
+        observedApp.addObserver(this);
+        statusList.add(observedApp);
+    }
+
+    public void removeObservedApp(AbstractAppStatus observedApp)
+    {
+        if (observedApp == null)
+        {
+            return;
+        }
+
+        statusList.remove(observedApp);
+    }
+
+    @Override
+    public void inject(AppStatusAppView view)
+    {
+        this.view = view;
+    }
+
+    @Override
+    public void update(
+        Observable o,
+        Object arg)
+    {
+        if (view == null)
+        {
+            return;
+        }
+
+        view.update(o, arg);
+    }
+}
