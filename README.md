@@ -13,14 +13,14 @@ I am also currently working on the following trainings so the code is not origin
 
 ## On Coursera
 ### Scala (École Polytechnique Fédérale de Lausanne)
-  #### Functional Programming Principles in Scala ####
-  #### Functional Program Design in Scala ####
-  #### 3 upcoming courses to complete the certification ####
+  * Functional Programming Principles in Scala ####
+  * Functional Program Design in Scala ####
+  * 3 upcoming courses to complete the certification ####
 ## Deep Learning (deeplearning.ai)
-  ### Structuring Machine Learning Projects
-  ### Neural Networks and Deep Learning
-  ### Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
-  ### 2 more courses to complete the certification
+  * Structuring Machine Learning Projects
+  * Neural Networks and Deep Learning
+  * Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
+  * 2 more courses to complete the certification
 ## On youtube channel The Cherno 
-### The Hazel Game Engine series
-### C++ series
+  * The Hazel Game Engine series
+  * C++ series
