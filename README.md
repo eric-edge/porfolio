@@ -13,9 +13,9 @@ I am also currently working on the following trainings so the code is not origin
 
 ## On Coursera
 ### Scala (École Polytechnique Fédérale de Lausanne)
-  * Functional Programming Principles in Scala ####
-  * Functional Program Design in Scala ####
-  * 3 upcoming courses to complete the certification ####
+  * Functional Programming Principles in Scala
+  * Functional Program Design in Scala
+  * 3 upcoming courses to complete the certification
 ### Deep Learning (deeplearning.ai)
   * Structuring Machine Learning Projects
   * Neural Networks and Deep Learning
