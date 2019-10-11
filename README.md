@@ -16,11 +16,11 @@ I am also currently working on the following trainings so the code is not origin
   * Functional Programming Principles in Scala ####
   * Functional Program Design in Scala ####
   * 3 upcoming courses to complete the certification ####
-## Deep Learning (deeplearning.ai)
+### Deep Learning (deeplearning.ai)
   * Structuring Machine Learning Projects
   * Neural Networks and Deep Learning
   * Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
   * 2 more courses to complete the certification
-## On youtube channel The Cherno 
+## On youtube channel *The Cherno*
   * The Hazel Game Engine series
   * C++ series
