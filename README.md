@@ -6,7 +6,7 @@ To whom this may concern
 You will find a few personnal projects on which I have worked in my spare time over the years.
 The projects are organized by language and each is presented in a README file.
 
-Please note that these projects are not production-ready projects in any shape or form.
+Please note that these projects are not production-ready in any shape or form.
 Only the project 'My Many Apps' is more mature in its design and could evolve into a 'usable' tool.
 
 I am also currently working on the following trainings so the code is not original and not included in the repo :
